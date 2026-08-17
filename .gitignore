@@ -1,0 +1,13 @@
+# Generated from setup.py.in by debian/rules
+/setup.py
+
+# Build output
+/.pybuild/
+/vici.egg-info/
+/debian/files
+/debian/.debhelper/
+/debian/debhelper-build-stamp
+/debian/python3-vici/
+/debian/*.debhelper.log
+/debian/*.debhelper
+/debian/*.substvars
