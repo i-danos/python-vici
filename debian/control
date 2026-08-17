@@ -1,0 +1,25 @@
+Source: python-vici
+Section: python
+Priority: optional
+Maintainer: DANOS Package Maintainers <DANOS@att.com>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-setuptools
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+
+Package: python3-vici
+Architecture: all
+Depends:
+ strongswan-charon,
+ ${misc:Depends},
+ ${python3:Depends}
+Description: VICI python bindings
+ Native Python interface for strongSwan's VICI protocol, used to configure
+ and query the charon daemon over its management socket.
+ .
+ The sources are the unmodified bindings from the strongSwan 6.0.1 release.
+ Debian's strongswan packaging builds every other strongSwan binary package
+ but not this one, so it is packaged separately here.

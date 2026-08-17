@@ -1,0 +1,10 @@
+python-vici (6.0.1-1danos1) unstable; urgency=medium
+
+  * Package strongSwan's VICI python bindings separately.
+    Debian 13's strongswan 6.0.1 source builds every strongSwan binary package
+    except python3-vici -- its debian/rules neither passes --enable-python-eggs
+    nor installs the bindings. vyatta-security-vpn and vyatta-ike-sa-daemon
+    both need them, so the bindings are packaged here, taken verbatim from the
+    strongswan 6.0.1 release tarball. No upstream source is modified.
+
+ -- DANOS Package Maintainers <DANOS@att.com>  Fri, 15 Aug 2026 00:00:00 +0000
