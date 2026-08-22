@@ -6,7 +6,8 @@ Build-Depends:
  debhelper-compat (= 13),
  dh-python,
  python3-all,
- python3-setuptools
+ python3-setuptools,
+ python3-pytest
 Standards-Version: 4.7.0
 Rules-Requires-Root: no
 
